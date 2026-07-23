@@ -325,7 +325,7 @@ with col2:
         margin=dict(l=20, r=20, t=30, b=20),
     )
     
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
     
     # Canadian conservation actions
     st.markdown("### Canadian Conservation Initiatives")
@@ -584,7 +584,7 @@ with col1:
         hovermode="closest"
     )
     
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
     
     # Add contextual information about the map
     st.markdown("""
@@ -658,7 +658,7 @@ with col1:
             font=dict(color="red")
         )
         
-        st.plotly_chart(fig3, use_container_width=True)
+        st.plotly_chart(fig3, width="stretch")
         
         # Add emotional impact message about provincial differences
         best_province = pop_df.iloc[0]['Province']
